@@ -1,0 +1,2 @@
+C:\Skole\Andreåret\PG4401C++\Oppgaver\Oppgave 5\Vector3D\Debug\Vector3D.exe
+C:\Skole\Andreåret\PG4401C++\Oppgaver\Oppgave 5\Vector3D\Debug\Vector3D.pdb
