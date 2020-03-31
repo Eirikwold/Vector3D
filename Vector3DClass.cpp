@@ -70,3 +70,27 @@ Vector3DClass operator*(float scalar, const Vector3DClass& v)
 	Vector3DClass result(v.m_x * scalar, v.m_y * scalar, v.m_z * scalar);
 	return result;
 }
+
+std::istream& operator>>(std::istream& inStream, Vector3DClass& v)
+{
+
+	std::cout << "Enter x: ";
+	inStream >> v.m_x;
+	std::cout << "Enter y: ";
+	inStream >> v.m_y;
+	std::cout << "Enter z: ";
+	inStream >> v.m_z;
+	return inStream;
+
+}
+
+std::ostream& operator<<(std::ostream& outStream, const Vector3DClass& v)
+{
+	outStream << "(" << v.m_x << ", " << v.m_y << ", " << v.m_z << ")";
+	return outStream;
+}
+
+//Array
+Vector3DClass:: operator const float *() const {
+	return &m_x;
+}
